@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+
+</head>
+<body>
+    <script>
+        function mediaAlunos() {
+            let nome = prompt("Informe seu nome:");
+            let nota1 = parseFloat(prompt("Informe sua 1 nota: "));
+            let nota2 = parseFloat(prompt("Informe sua 2 nota: "));
+            let nota3 = parseFloat(prompt("Informe sua 3 nota: "));
+            let media = (nota1 + nota2 + nota3) / 3;
+
+            if (media === 10) {
+                return `${nome}, voce é  top, sua media foi ${media}`;
+            } else if (media >= 7 && media < 10) {
+                return `${nome}, voce esta aprovado e sua media foi ${media}`;
+            } else {
+                return `${nome}, que pena, voce ficou de recuperacao, e sua media foi ${media}`;
+            }
+        }
+
+        alert(mediaAlunos());
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero primo</title>
+</head>
+<body>
+    <script>
+        function numberPrimo(){
+            let number = parseInt(prompt("Informe um numero: "));
+            
+            if (number <= 1) {
+                return "Numero invalido";
+            }
+            
+            for (let n = 2; n < number; n++) {
+                if (number % n === 0) {
+                    return "Nao é primo";
+                }
+            }
+            
+            return `${number} é primo`;
+        }
+
+        alert(numberPrimo());
+    </script>
+</body>
+</html>

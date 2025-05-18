@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares</title>
+</head>
+<body>
+    <script>
+        function pares(paress){
+            return paress
+                .filter(number => number % 2 === 0) 
+                .map(number => number * 2);         
+        }
+
+        const numeros = [10,11,12,13,14,15,16];
+        const resultado = pares(numeros);
+
+        alert(resultado);
+    </script>
+</body>
+</html>

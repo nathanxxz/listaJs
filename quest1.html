@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador</title>
+</head>
+<body>
+
+    <script>
+        function verificacaoIdade() {
+            let idade = parseInt(prompt("Digite sua idade: "));
+
+            if (idade >= 0 && idade <= 11) {
+                return "Você é criança";
+            } else if (idade >= 12 && idade < 18) {
+                return "Você é adolescente";
+            } else {
+                return "Você é adulto";
+            }
+        }
+
+        alert(verificacaoIdade());
+    </script>
+
+</body>
+</html>
